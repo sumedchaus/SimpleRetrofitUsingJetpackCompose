@@ -4,6 +4,7 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Card
@@ -25,8 +26,14 @@ import com.cs.simpleretrofitusingjetpackcompose.model.Movie
 @Composable
 fun MovieList(movieList: List<Movie>) {
     LazyColumn {
-        itemsIndexed(items = movieList) { index, item ->
-            MovieItem(movie = item)
+
+        //1st method
+//        itemsIndexed(items = movieList) { index, item ->
+//            MovieItem(movie = item)
+//        }
+//2nd method
+        items(movieList) { item ->
+        MovieItem(movie = item)
         }
     }
 }
