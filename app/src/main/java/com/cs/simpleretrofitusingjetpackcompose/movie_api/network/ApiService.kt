@@ -1,8 +1,6 @@
-package com.cs.simpleretrofitusingjetpackcompose.network
+package com.cs.simpleretrofitusingjetpackcompose.movie_api.network
 
-import com.cs.simpleretrofitusingjetpackcompose.model.Movie
-import retrofit2.Retrofit
-import retrofit2.converter.gson.GsonConverterFactory
+import com.cs.simpleretrofitusingjetpackcompose.movie_api.model.Movie
 import retrofit2.http.GET
 
 interface ApiService {

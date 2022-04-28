@@ -6,14 +6,13 @@ import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
-import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import com.cs.simpleretrofitusingjetpackcompose.model.Movie
-import com.cs.simpleretrofitusingjetpackcompose.screen.MovieList
+import com.cs.simpleretrofitusingjetpackcompose.movie_api.screen.MovieList
 import com.cs.simpleretrofitusingjetpackcompose.ui.theme.SimpleRetrofitUsingJetpackComposeTheme
-import com.cs.simpleretrofitusingjetpackcompose.view_model.MainViewModel
+import com.cs.simpleretrofitusingjetpackcompose.movie_api.view_model.MainViewModel
+import com.cs.simpleretrofitusingjetpackcompose.news_api.screen.NewsScreen
+import com.cs.simpleretrofitusingjetpackcompose.using_callback.anime_api.screen.AnimeScreen
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,14 +25,13 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    HomeScreen()
+//                    HomeScreen()
+//                    NewsScreen()
+                    AnimeScreen()
                 }
             }
         }
     }
 }
 
-@Composable
-fun HomeScreen(viewModel: MainViewModel = MainViewModel()) {
-    MovieList(movieList = viewModel.movieListResponse)
-}
+

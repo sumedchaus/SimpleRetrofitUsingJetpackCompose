@@ -1,12 +1,12 @@
-package com.cs.simpleretrofitusingjetpackcompose.view_model
+package com.cs.simpleretrofitusingjetpackcompose.movie_api.view_model
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.cs.simpleretrofitusingjetpackcompose.model.Movie
-import com.cs.simpleretrofitusingjetpackcompose.network.RetrofitInstance
+import com.cs.simpleretrofitusingjetpackcompose.movie_api.model.Movie
+import com.cs.simpleretrofitusingjetpackcompose.movie_api.network.RetrofitInstance
 import kotlinx.coroutines.launch
 
 class MainViewModel : ViewModel() {

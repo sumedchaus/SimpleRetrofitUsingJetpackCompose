@@ -1,4 +1,4 @@
-package com.cs.simpleretrofitusingjetpackcompose.network
+package com.cs.simpleretrofitusingjetpackcompose.movie_api.network
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

@@ -1,4 +1,4 @@
-package com.cs.simpleretrofitusingjetpackcompose.model
+package com.cs.simpleretrofitusingjetpackcompose.movie_api.model
 
 data class Movie(
     val category: String,
